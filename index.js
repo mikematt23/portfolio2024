@@ -42,7 +42,7 @@ openButton.addEventListener('click',()=>{
   
  setTimeout(()=>{
   title1.innerText = "Express API - NodeJS, Express, SQL"
-  description1.innerText = "This is an Express API I create that use Node and Express to conect to a SQL database to search, update, delete, insert, and return data base on the routes and the parameters "
+  description1.innerText = "This is an Express API I create that use Node and Express to connect to a SQL database to search, update, delete, insert, and return data base on the routes and the parameters "
   codeLink1.innerText = "Code"
   codeLink1.classList.add('a')
   codeLink1.addEventListener('click',()=>{
