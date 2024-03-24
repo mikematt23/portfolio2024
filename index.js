@@ -44,26 +44,47 @@ openButton.addEventListener('click',()=>{
   title1.innerText = "Express API - NodeJS, Express, SQL"
   description1.innerText = "This is an Express API I create that use Node and Express to conect to a SQL database to search, update, delete, insert, and return data base on the routes and the parameters "
   codeLink1.innerText = "Code"
-  codeLink1.href = "https://github.com/mikematt23/restAPI"
-
+  codeLink1.classList.add('a')
+  codeLink1.addEventListener('click',()=>{
+    window.open("https://github.com/mikematt23/restAPI")
+  })
+  
   title2.innerText = "ScrubHub - React Native, Redux"
   description2.innerText = "This is a project that use React Native to create a mobile app for IOS and Android. The app allows a user sign up to schedule a mobile car wash"
   codeLink12.innerText = "Code"
-  codeLink12.href = "https://github.com/mikematt23/ScrubHubMobile"
+  codeLink12.classList.add('a')
+  codeLink12.addEventListener('click',()=>{
+    window.open("https://github.com/mikematt23/ScrubHubMobile")
+  })
 
   title13.innerText = "React Meals - React,CSS"
   description3.innerText = "This is a project that use React to mange a dummy shopping cart using based on user actions."
   codeLink3.innerText = "Code"
-  codeLink3.href = "https://github.com/mikematt23/reactMeals/tree/master/src"
+  codeLink3.classList.add('a')
   projectLink3.innerText = "Project"
-  projectLink3.href = "https://eloquent-pixie-cfa919.netlify.app/"
+  projectLink3.classList.add('a')
 
+  project3.addEventListener('click',()=>{
+    window.open("https://eloquent-pixie-cfa919.netlify.app/")
+  })
+  codeLink3.addEventListener('click',()=>{
+    window.open("https://github.com/mikematt23/reactMeals/tree/master/src")
+  })
+ 
+  
   title4.innerText = "Tic-Tac-Toe - Javascript,CSS"
   description4.innerText = "This project use vanilla JavaScript to create a basic game of tic tac toe with all rules and fuctionality"
   codeLink4.innerText = "Code"
-  codeLink4.href = "https://github.com/mikematt23/ticTacTOe2023"
+  codeLink4.classList.add('a')
   projectLink4.innerText = "Project"
-  projectLink4.href = "https://glittering-zuccutto-73cdb4.netlify.app/"
+  projectLink4.classList.add('a')
+
+  projectLink4.addEventListener("click",()=>{
+    window.open("https://glittering-zuccutto-73cdb4.netlify.app/")
+  })
+  codeLink4.addEventListener('click',()=>{
+    window,open("https://github.com/mikematt23/ticTacTOe2023")
+  })
  },1500)
 })
 
@@ -77,6 +98,16 @@ closeButton.addEventListener('click',()=>{
   project2.classList.remove('p')
   project3.classList.remove('p')
   project4.classList.remove('p')
+
+  projectLink1.classList.remove('a')
+  projectLink2.classList.remove('a')
+  projectLink3.classList.remove('a')
+  projectLink4.classList.remove('a')
+
+  codeLink1.classList.remove('a')
+  codeLink12.classList.remove('a')
+  codeLink3.classList.remove('a')
+  codeLink4.classList.remove('a')
 
   project1.classList.add('closeAnimation1')
   project2.classList.add('closeAnimation2')

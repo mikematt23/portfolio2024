@@ -46,6 +46,15 @@ button{
   box-shadow: 2px 2px;
   font-family:  "Exo 2", sans-serif;
 }
+.a{
+  background-color: rgba(251, 251, 9, 0.421);
+  border: none;
+  border-radius: 3px;
+  height: 4rem;
+  padding: .5rem;
+  box-shadow: 2px 2px;
+  font-family:  "Exo 2", sans-serif;
+}
 button:hover{
   box-shadow: 3px 3px;
 }
